@@ -23,7 +23,7 @@ dependencies {
 ![image](https://github.com/myhcqgithub/CollapsibleView/blob/master/img/1.jpg)
 #### this is collapse state 
 ![image](https://github.com/myhcqgithub/CollapsibleView/blob/master/img/2.jpg)
-#### this is not expand state 
+#### this is not expandView state 
 ![image](https://github.com/myhcqgithub/CollapsibleView/blob/master/img/3.jpg)
 
 ## demo mp4

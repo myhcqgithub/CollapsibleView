@@ -26,6 +26,7 @@ import top.legend.collapsible.adapter.holder.BaseHolder;
 import top.legend.collapsible.listener.OnItemClickListener;
 import top.legend.collapsible.listener.OnItemLongClickListener;
 import top.legend.collapsible.listener.ToggleListener;
+import top.legend.collapsible.utils.Utils;
 
 
 /**
@@ -91,7 +92,7 @@ public class CollapsibleLayout extends LinearLayout implements View.OnClickListe
         mCollapseText = ta.getString(R.styleable.expand_layout_collapse_text);
         mTextColor = ta.getColor(R.styleable.expand_layout_text_color,
                 getResources().getColor(R.color.colorBlack90));
-        mTextSize = ta.getDimensionPixelSize(R.styleable.expand_layout_text_size, 16);
+        mTextSize = ta.getDimensionPixelSize(R.styleable.expand_layout_text_size, Utils.sp2px(context,16));
         mIconAnimation = ta.getBoolean(R.styleable.expand_layout_icon_animation, true);
         hasExpandView = ta.getBoolean(R.styleable.expand_layout_has_expand_view, true);
         mDefaultShowCount = ta.getInteger(R.styleable.expand_layout_default_show_count, 2);
@@ -129,7 +130,7 @@ public class CollapsibleLayout extends LinearLayout implements View.OnClickListe
         mTvTips.setTextColor(mTextColor);
 
         //setup image drawable
-        if (mImageArrow != null) {
+        if (mRightIconDrawable != null) {
             mImageArrow.setImageDrawable(mRightIconDrawable);
         }
 

@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">collapsible</string>
-    <string name="string_expand">展开更多</string>
-    <string name="string_collapse">收起</string>
+    <string name="string_expand">expand more</string>
+    <string name="string_collapse">collapse</string>
 </resources>

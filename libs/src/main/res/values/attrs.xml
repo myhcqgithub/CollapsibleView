@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="expand_layout">
+        <!--右边图标-->
+        <attr name="right_icon" format="reference"/>
+        <!--扩展文字-->
+        <attr name="expand_text" format="string"/>
+        <!--收起文字-->
+        <attr name="collapse_text" format="string"/>
+        <!--文字颜色-->
+        <attr name="text_color" format="color|reference"/>
+        <!--文字大小-->
+        <attr name="text_size" format="dimension|reference"/>
+        <!--图片动画-->
+        <attr name="icon_animation" format="boolean"/>
+        <!--是否需要扩展view-->
+        <attr name="has_expand_view" format="boolean"/>
+        <!--默认显示个数-->
+        <attr name="default_show_count" format="integer"/>
+
+    </declare-styleable>
+</resources>

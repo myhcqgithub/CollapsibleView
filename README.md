@@ -14,7 +14,7 @@ allprojects {
 ## Step 2. Add the dependency
 ```java
 dependencies {
-	        compile 'com.github.myhcqgithub:CollapsibleView:v0.0.1'
+	        compile 'com.github.myhcqgithub:CollapsibleView:v0.0.2'
 	}
 ```
 

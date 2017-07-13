@@ -26,6 +26,42 @@ dependencies {
 #### this is not expand state 
 ![image](https://github.com/myhcqgithub/CollapsibleView/blob/master/img/3.jpg)
 
+## demo mp4
+![](https://github.com/myhcqgithub/CollapsibleView/blob/master/img/4.mp4)
+## usage method 
+```java
+  //setAdapter
+  mDefaultAdapter = new DefaultAdapter<String>(list, R.layout.item) {
+            @Override
+            public void bind(DefaultHolder defaultHolder, int position, String item) {
+                defaultHolder.setText(R.id.text, item);
+            }
+        };
+   mRoot.setAdapter(mDefaultAdapter);
+  //set listener 
+   mRoot.setOnItemClickListener(new OnItemClickListener() {
+            @Override
+            public void onItemClick(CollapsibleLayout view, int position, Object data) {
+                Toast.makeText(MainActivity.this, data.toString(), Toast.LENGTH_SHORT).show();
+            }
+        });
+    mRoot.setOnItemLongClickListener(new OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(CollapsibleLayout view, int position, Object data) {
+                Toast.makeText(MainActivity.this, data.toString(), Toast.LENGTH_SHORT).show();
+                return true;
+            }
+        });
+    mRoot.setToggleListener(new ToggleListener() {
+            @Override
+            public void toggle(CollapsibleLayout layout, boolean toggle) {
+                Toast.makeText(MainActivity.this, toggle + "", Toast.LENGTH_SHORT).show();
+            }
+        });
+	
+   //refresh
+   mDefaultAdapter.notifyDataSetChanged();
+```	
 ## expanded attribute
 ``` java
         <!--right icon-->
